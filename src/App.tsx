@@ -1,9 +1,12 @@
+import { Routes, Route } from "react-router-dom";
 import SignUp from "./SignUp";
-import "./style.css"
+import "./style.css";
 function App() {
   return (
     <>
-      <SignUp />
+      <Routes>
+        <Route path="/" element={<SignUp />} />
+      </Routes>
     </>
   );
 }
